@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "smartCC",
+  "description": "smartCC Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "src/main.html",
+    "default_icon": "src/images/logo.png"
+  }
+}
