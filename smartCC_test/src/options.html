@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <style>
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 8px);
+        padding: 0 8px;
+      }
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      .form-group select,
+      .form-group input {
+        width: 100%;
+      }
+      .main-section {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body class="w-72 h-auto bg-gray-800 flex flex-col items-center">
+    <!-- TopNav -->
+    <div class="flex w-full justify-start items-center h-14 gap-4 px-2 m-0">
+      <img class="w-10 h-10 rounded" src="/src/images/logo1.png" />
+      <button class="text-sm text-white" id="home-btn">Home</button>
+      <button class="text-sm text-white" id="options-btn">Options</button>
+    </div>
+    <!-- MainSection -->
+    <div
+      class="w-80 bg-slate-100 p-4 shadow-lg flex flex-col items-center justify-between rounded-lg main-section"
+    >
+      <h2 class="w-full h-10 text-2xl font-bold text-center text-gray-800 mb-2">
+        Subtitle Options
+      </h2>
+      <div class="w-full text-center text-gray-600 mb-4">
+        Customize your subtitles to match your preferences.
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="text-gray-600">Font</label>
+          <select class="p-2 border rounded">
+            <option>Arial</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="text-gray-600">Size</label>
+          <input type="number" class="p-2 border rounded" value="12" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="text-gray-600">Color</label>
+          <input type="color" class="p-2 border rounded" value="#FFFFFF" />
+        </div>
+        <div class="form-group">
+          <label class="text-gray-600">Background</label>
+          <input type="color" class="p-2 border rounded" value="#191919" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="text-gray-600">Stroke</label>
+          <input type="number" class="p-2 border rounded" value="0" />
+        </div>
+        <div class="form-group">
+          <label class="text-gray-600">Spacing</label>
+          <input type="number" class="p-2 border rounded" value="0" />
+        </div>
+      </div>
+      <div class="flex w-full justify-around mt-2 gap-1">
+        <button class="bg-slate-300 text-black py-2 px-4 rounded w-28">
+          Reset
+        </button>
+        <button class="bg-teal-500 text-white py-2 px-4 rounded w-28">
+          Save
+        </button>
+      </div>
+    </div>
+    <!-- BottomSection -->
+    <!-- <div class="flex flex-col items-center justify-center text-white mt-1">
+      <div class="text-xs font-thin">© 2024 SmartCC. All rights reserved.</div>
+      <div class="flex justify-around w-full mt-2 gap-x-2">
+        <button class="text-xs font-thin">Privacy Policy</button>
+        <button class="text-xs font-thin">Terms of Service</button>
+        <button class="text-xs font-thin">About Us</button>
+      </div>
+    </div> -->
+  </body>
+</html>
